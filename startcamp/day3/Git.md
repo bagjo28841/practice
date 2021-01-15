@@ -44,14 +44,22 @@ Ctrl L 화면 clear
 
 shell을 사용할때 가장 중요한 건 경로! 원하는데까지 들어가서 우클릭해야함
 
+명령어는 공백으로 구분 -> 항상 띄어쓰기 하고 명령어 써야함
+
 ----
 
 1. **git init** 시점 초기화가 제일 먼저 -> 꼭 (master)가 생겨야함! 있는지 늘 확인할것
 
    (브랜치의 가장 기본 이름이 master)
 
-   **git status** On branch master No commits yet Untracked files: 
+   **git status** On branch master No commits yet Untracked files: (아직 추가안됨)
 
-2. add
+2. **add** (staging area에 추가해야 들어감)
+
+   개인 key 등 올리지 말아야 할 것들도 있음! -> add하기 전에 숨김파일 **.gitignore**로 미리 등록!!
+
+   현재 아래의 전체를 다 추가하려면 git add .
+
+   git add startcamp/ 로도 가능
 
 3. branch

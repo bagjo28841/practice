@@ -23,3 +23,5 @@ print(add(2, 3))
 # 함수 실행 결과(return)값 변수에 할당
 result = add(1, 2)
 print(result)
+
+# 미니 실습) 주어진 양수 n

@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
+
 KEY = 'rq2kBGp%2BMv32xNqQDrDEw7AoA36%2B5Bjr97JeH%2B%2FxCQjHYx9IV215w1BO4S5MUYfKswQYa2vdyu5%2BVWRfg1bMbA%3D%3D'
 URL = f'http://apis.data.go.kr/B552584/ArpltnInforInqireSvc/getCtprvnRltmMesureDnsty?serviceKey={KEY}&numOfRows=5&pageNo=1&sidoName=서울&ver=1.0&returnType=xml'
 
