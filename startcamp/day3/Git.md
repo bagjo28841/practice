@@ -46,15 +46,21 @@ shell을 사용할때 가장 중요한 건 경로! 원하는데까지 들어가�
 
 명령어는 공백으로 구분 -> 항상 띄어쓰기 하고 명령어 써야함
 
+
+
+수정(초록색 바 표시), 삭제(빨강색 세모 표시)
+
 ----
 
-1. **git init** 시점 초기화가 제일 먼저 -> 꼭 (master)가 생겨야함! 있는지 늘 확인할것
+1. **git init** 시점 초기화가 제일 먼저 
+
+   -> 꼭 (master)가 생겨야함!= 내가 git의 관리를 받고있구나, 이게 있는지 늘 확인할것 
 
    (브랜치의 가장 기본 이름이 master)
 
    **git status** On branch master No commits yet Untracked files: (아직 추가안됨)
 
-2. **add** (staging area에 추가해야 들어감)
+2. **add** (staging area(=INDEX)에 추가해야 들어감)
 
    개인 key 등 올리지 말아야 할 것들도 있음! -> add하기 전에 숨김파일 **.gitignore**로 미리 등록!!
 
@@ -62,4 +68,41 @@ shell을 사용할때 가장 중요한 건 경로! 원하는데까지 들어가�
 
    git add startcamp/ 로도 가능
 
-3. branch
+3. **commit**  git commit -m "first commit" 커밋하고
+
+   git status 다시 확인(중간중간 계속 확인할 것)
+
+   commit은 status에 안보이니까 git log로 확인
+
+4. **github**에 업로드
+
+```
+git remote add origin https://github.com/bagjo28841/practice.git
+```
+
+origin이라는 remote저장소(https://github.com/bagjo28841/practice.git)에 추가(연결)
+
+-> 로컬에 있는 이 폴더랑 온라인(깃허브 레파지토리) 연결
+
+git에 복붙해서 적용하고 git remote -v로 확인해보면 origin이라는 곳에 push할 예정(연결됨)
+
+repository의 처음  push는 git push -u origin master 써줘야함
+
+(두번째 변경사항부터는 git push만 해줘도 됨)
+
+origin이라는 주소에 master branch로 올리겠다
+
+연결 잘못했다면 rm (remove) 가능
+
+> 추가사항:
+>
+> global 마다 한개의 계정만 가능
+>
+> windows에서 자격 검색 - 자격 증명 관리 - windows 자격 증명 - 편집/제거 가능
+>
+> 오프라인에서 다른 사람 컴퓨터를 쓰게 되면 제거하고 push 해야함
+
+5. **branch**
+
+
+
